@@ -1,0 +1,40 @@
+$height-header: 80px;
+$icons-height: 24px;
+$btn-height: 45px;
+$btn-width: 120px;
+
+header{
+  border-bottom: 1px solid #000;
+
+  //Size of the header.
+  & div{
+    height: 80px;
+    padding:  0 17px 0 17px;
+  }
+
+  //Size of all the images svg in the header.
+  & svg{
+    height: $icons-height;
+  }
+
+  //Smiley icon and center it.
+  & .icon-center{
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: ($height-header/2) - ($icons-height/2);
+  }
+
+  //Style of the button in the header.
+  & .btn-dark{
+    height: $btn-height;
+    width: $btn-width;
+
+    &:hover{
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+//Styles in general, styles that are used in all the page.
+
+//Font Roboto in weight 400 for all the page.
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$black: #000;
+$white: #fff;
+
+//Preformat styles in every class.
+*{
+  //Preformat the font in every class.
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+
+  //All the buttons with 60px in its border radius.
+  & .btn{
+    border-radius: 60px;
+  }
+}
+
+//Import our stylesheets that have styles separated by elements in our page.
+@import './layouts/header';
+@import './layouts/footer';
