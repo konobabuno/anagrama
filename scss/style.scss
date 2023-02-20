@@ -11,13 +11,11 @@ $white: #fff;
   font-family: 'Roboto';
   font-weight: 400;
   font-style: normal;
-
-  //All the buttons with 60px in its border radius.
-  & .btn{
-    border-radius: 60px;
-  }
+  color: $black;
 }
 
 //Import our stylesheets that have styles separated by elements in our page.
+@import './components/texts';
+@import './components/buttons';
 @import './layouts/header';
 @import './layouts/footer';

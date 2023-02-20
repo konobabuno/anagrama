@@ -1,5 +1,4 @@
 $footer-height: 80px;
-$font-size-footer: 15px;
 
 //Make the footer always be in the bottom and the color of the text
 //in it.
@@ -13,7 +12,6 @@ footer{
 
   & p{
     color: $white;
-    font-size: $font-size-footer;
     margin-right: 18px;
   }
 
