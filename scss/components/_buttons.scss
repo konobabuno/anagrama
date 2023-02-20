@@ -7,15 +7,15 @@
   border: 1px solid $black;
 
   &:hover{
-    background-color: $white;
+    background-color: transparent;
     color: $black;
   }
 }
   
 %button-type-light{
-background-color: $white;
+background-color: transparent;
 color: $black;
-border: 1px solid $white;
+border: 1px solid $black;
 
 &:hover{
   background-color: $black;
