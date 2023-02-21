@@ -1,0 +1,20 @@
+$footer-height: 80px;
+
+//Make the footer always be in the bottom and the color of the text
+//in it.
+footer{
+  width: 100%;
+  height: $footer-height;
+  background-color: $black;
+  padding: 0 15px 0 15px;
+
+  & p{
+    color: $white;
+    margin-right: 18px;
+
+    @include media-down(md){
+      margin-right: 0px;
+    }
+  }
+
+}

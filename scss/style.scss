@@ -1,0 +1,40 @@
+//Styles in general, styles that are used in all the page.
+
+//Breakpoints and the mixin to control it.
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+);
+
+@mixin media-down($breakpoint){
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+    @content
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$black: #000;
+$white: #fff;
+$yellow: #FFF959;
+
+//Preformat styles in every class.
+*{
+  //Preformat the font in every class.
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  color: $black;
+}
+
+//Preformat of the row in every case.
+.row>*{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+//Import our stylesheets that have styles separated by elements in our page.
+@import './components/texts';
+@import './components/buttons';
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';

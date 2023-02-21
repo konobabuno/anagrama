@@ -1,0 +1,49 @@
+//This component is for
+//the type of texts (tags) and their styles (format).
+
+h1,h2,body,p{
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1,h2,.btn{
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 64px;
+
+  @include media-down(md){
+    font-size: 56px;
+  }
+
+  @include media-down(sm){
+    font-size: 36px;
+  }
+}
+
+h2{
+  font-size: 32px;
+
+  @include media-down(sm){
+    font-size: 24px;
+  }
+}
+
+body{
+  font-size: 15px;
+}
+
+
+.cards-container p{
+  @include media-down(md){
+    font-size: 14px;
+  }
+}
+
+.btn{
+  font-size: 16px;
+  border-radius: 60px;
+}

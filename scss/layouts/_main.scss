@@ -1,0 +1,114 @@
+$size-rect-headline-sm: 256px;
+
+//The yellow rectangle that we use in our page repeatedly.
+%rect-main{
+  background-color: $yellow;
+  border-radius: 15px;
+  border: 0;
+}
+
+main{
+  padding-top: 50px;
+
+  .content-headline{
+    @include media-down(sm){
+      position:relative;
+      bottom: -$size-rect-headline-sm;
+    }
+
+    & h1{
+      @include media-down(sm){
+        margin-top: 21px;
+      }
+    }
+  }
+
+  //The wrap that our headline have.
+  .headline-wrap{
+    padding: 0 15px 0 15px;
+
+    .headline-container{
+      @extend %rect-main;
+      width: 100%;
+      height: 750px;
+      
+      @include media-down(md){
+        height: 650px;
+      }
+
+      @include media-down(sm){
+        height: $size-rect-headline-sm;
+      }
+
+      & p{
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-top: 19px;
+        width: 460px;
+
+        @include media-down(sm){
+          width: 280px;
+        }
+      }
+  
+      & .btn-dark{
+        margin-top: 34px;
+        @include button($dark: false, $btn-width: 370px, $btn-height: 45px);
+
+        @include media-down(md){
+          @include button($dark: false, $btn-width: 290px, $btn-height: 45px);
+        }
+      }
+    }
+  }
+
+  //Here are all the cards and their styles.
+  .cards-container{
+    margin-top: 50px;
+    margin-bottom: 18px;
+    
+    @include media-down(md){
+      margin-bottom: 10px;
+      padding: 0 76px 0 76px;
+    }
+
+    @include media-down(sm){
+      padding: ($size-rect-headline-sm) 12px 0 12px ;
+    }
+
+    & p, & h2{
+      text-align: start;
+    }
+
+    & p{
+      margin-top: 25px;
+    }
+
+    .card-rect{
+      @extend %rect-main;
+      height: 450px;
+
+      @include media-down(md){
+        height: 353px;
+      }
+    }
+
+    .btn-dark{
+      margin-top: 22px;
+      margin-bottom: 40px;
+      @include button($dark: false, $btn-width: 100%, $btn-height: 45px);
+    }
+
+    .border-hover:hover{
+      .card-rect{
+        border: 1px solid $black;
+      }
+      .btn-dark{
+        @extend %button-type-dark;
+      }
+    }
+  }
+
+
+}
+

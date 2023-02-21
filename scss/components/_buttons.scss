@@ -1,0 +1,35 @@
+//This component is for our buttons.
+//All the buttons
+
+%button-type-dark{
+  background-color: $black;
+  color: $white;
+  border: 1px solid $black;
+
+  &:hover{
+    background-color: transparent;
+    color: $black;
+  }
+}
+  
+%button-type-light{
+background-color: transparent;
+color: $black;
+border: 1px solid $black;
+
+&:hover{
+  background-color: $black;
+  color: $white;
+}
+}
+
+//how the button would look like
+@mixin button($dark, $btn-width, $btn-height) {
+@if $dark{
+  @extend %button-type-dark;
+} @else {
+  @extend %button-type-light;
+}  
+height: $btn-height;
+width: $btn-width;
+}
