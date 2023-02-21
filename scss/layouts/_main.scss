@@ -1,6 +1,6 @@
 $size-rect-headline-sm: 256px;
 
-
+//The yellow rectangle that we use in our page repeatedly.
 %rect-main{
   background-color: $yellow;
   border-radius: 15px;
@@ -23,6 +23,7 @@ main{
     }
   }
 
+  //The wrap that our headline have.
   .headline-wrap{
     padding: 0 15px 0 15px;
 
@@ -61,6 +62,7 @@ main{
     }
   }
 
+  //Here are all the cards and their styles.
   .cards-container{
     margin-top: 50px;
     margin-bottom: 18px;

@@ -17,6 +17,11 @@ header{
   //Size of all the images svg in the header.
   & svg{
     height: $icons-header-height;
+
+    @include media-down(sm){
+      height: 15px;
+      width: fit-content;
+    }
   }
 
   //Smiley icon and center it.
