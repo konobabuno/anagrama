@@ -14,14 +14,33 @@ h1,h2,.btn{
 
 h1{
   font-size: 64px;
+
+  @include media-down(md){
+    font-size: 56px;
+  }
+
+  @include media-down(sm){
+    font-size: 36px;
+  }
 }
 
 h2{
   font-size: 32px;
+
+  @include media-down(sm){
+    font-size: 24px;
+  }
 }
 
 body{
   font-size: 15px;
+}
+
+
+.cards-container p{
+  @include media-down(md){
+    font-size: 14px;
+  }
 }
 
 .btn{

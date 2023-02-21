@@ -11,6 +11,10 @@ footer{
   & p{
     color: $white;
     margin-right: 18px;
+
+    @include media-down(md){
+      margin-right: 0px;
+    }
   }
 
 }

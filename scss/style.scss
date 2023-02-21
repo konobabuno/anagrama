@@ -1,6 +1,16 @@
 //Styles in general, styles that are used in all the page.
 
-//Font Roboto in weight 400 for all the page.
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+);
+
+@mixin media-down($breakpoint){
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+    @content
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $black: #000;
 $white: #fff;
